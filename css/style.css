@@ -1,0 +1,150 @@
+:root, * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", "Open Sans", sans-serif;
+}
+
+.img img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.header,
+.body,
+input,
+.social a {
+  background-color: #1e202b;
+}
+
+.header a {
+  color: #fff;
+}
+.header .logo .img {
+  width: 69px;
+}
+small {
+  font-size: 10px;
+  color: #ccc;
+}
+
+.logo {
+  line-height: 1.2;
+}
+.header ul li a {
+  padding: 2px 25px 4px;
+  font-size: 15px;
+}
+.header ul li.active a, 
+.header ul li a:hover{
+  border-radius: 40px;
+  color: #009ad8;
+  border: 2px solid #009ad8;
+} 
+.header ul li a:hover:not(li.active a) {
+  padding: 2px 23.5px 4px;
+}
+
+
+
+.bg-img {
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+}
+
+.btn-primary {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+.weather {
+  color: #ccc;
+}
+
+.weather .degrees {
+  font-size: 90px;
+}
+.today .degree {
+  font-size: 60px;
+}
+.today img {
+  width: 90px;
+}
+.max-deg .degree,
+.min-deg .degree {
+  font-size: 10px;
+}
+.weather .today .date,
+.weather .third-day .date {
+  background-color: #2d303d;
+}
+
+.weather .today .details,
+.weather .third-day .details {
+  background-color: #323544;
+}
+
+.weather .tomorrow .date {
+  background-color: #222531;
+}
+
+.weather .tomorrow .details {
+  background-color: #262936;
+}
+
+.weather .details i {
+  font-size: 20px;
+  color: #888;
+}
+
+.fa-umbrella {
+  transform: rotate(45deg);
+}
+
+
+
+
+.footer {
+  background-color: #262936;
+}
+.facebook {
+  padding: 9px 14px;
+}
+.twitter {
+  padding: 9px 10px;
+}
+.google {
+  padding: 9px 8px;
+}
+.pint {
+  padding: 9px 11px;
+}
+
+
+.social a,
+.social a i {
+  transition-duration: 0.3s;
+}
+.social a:hover {
+  background-color: #0d6efd ;
+}
+.social a:hover .text-primary {
+  color: #fff !important;
+}
+.copy-right {
+  color: #aaa;
+}
