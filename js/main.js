@@ -34,7 +34,7 @@ if( (thirdDayDate.getDay()+2)>=days.length) {
 async function getWeather(location = "cairo") {
   let twoDays = document.querySelectorAll(".details")
   const apiKey = "f2dff1d7240d4ecc86e121218240607"
-  const baseUrl = "http://api.weatherapi.com/v1/forecast.json"
+  const baseUrl = "https://api.weatherapi.com/v1/forecast.json"
   const response = await fetch(`${baseUrl}?key=${apiKey}&q=${location}&days=3`)
   console.log(response);
   const data = await response.json()
