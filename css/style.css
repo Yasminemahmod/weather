@@ -84,6 +84,9 @@ small {
 .today img {
   width: 90px;
 }
+.min-deg {
+  color: #ccc;
+}
 .max-deg .degree,
 .min-deg .degree {
   font-size: 10px;

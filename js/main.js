@@ -63,7 +63,7 @@ async function getWeather(location = "cairo") {
     <div class="d-flex gap-5 align-items-center">
     <div class="degrees text-white fw-bold my-4 d-flex">${data.current.temp_c}<p class="degree">o</p>C</div>                
     <div class=""img>
-    <img class="" src="${data.forecast.forecastday[0].hour[hours.getHours()].condition.icon}" class="cloud"></img></div>
+    <img class="" src="http:${data.forecast.forecastday[0].hour[hours.getHours()].condition.icon}" class="cloud"></img></div>
     </div>
     <div class="cloud-status text-primary my-3">${data.forecast.forecastday[0].hour[hours.getHours()].condition.text}</div>
     <div class="more-det d-flex gap-4 align-items-center">
@@ -87,9 +87,9 @@ async function getWeather(location = "cairo") {
         <div class="cloud">
         <img class="" src="${data.forecast.forecastday[i].hour[hours.getHours()].condition.icon}" class="cloud"></img>
         </div>
-        <div class="max-deg pt-3 d-flex justify-content-center">${data.forecast.forecastday[i].day.maxtemp_c}<p class="degree position-relative">o</p>C</div>
-        <div class="min-deg pt-3 d-flex justify-content-center">${data.forecast.forecastday[i].day.mintemp_c}<p class="degree position-relative">o</p>C</div>
-        <div class="cloud-det pt-3 pb-4 pb-lg-0 ">${data.forecast.forecastday[i].hour[hours.getHours()].condition.text}</div>
+        <div class="max-deg text-white fs-4 fw-bold pt-3 d-flex justify-content-center">${data.forecast.forecastday[i].day.maxtemp_c}<p class="degree position-relative fs-6 fw-bold">o</p>C</div>
+        <div class="min-deg d-flex justify-content-center">${data.forecast.forecastday[i].day.mintemp_c}<p class="degree position-relative">o</p>C</div>
+        <div class="cloud-det pt-3 pb-4 pb-lg-0 text-primary">${data.forecast.forecastday[i].hour[hours.getHours()].condition.text}</div>
       `
     }
 }
